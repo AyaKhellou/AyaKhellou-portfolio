@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+@theme{
+    --color-background: #FAF9F6;
+    --color-accent: #B57BA6;
+    --color-headlines:#2E2E2E;
+    --color-dark-accent:#9d6e91;
+    --color-borders: #444444;
+    --color-writing: #3A3A3A;
+    --color-cards-background: #F5F3EF;
+    --font-heading-font: "Playfair Display", serif;
+    --font-body-font: "Inter", sans-serif;
+    --font-logo-font: "Quicksand", sans-serif;
+    --breakpoint-sm: 480px;
+    --breakpoint-tablet: 940px;
+}
+.links-hover{
+    @apply hover:text-accent transition-all duration-300 ease-in-out;
+}
+.btn-style{
+    @apply  border-2 border-borders px-6 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-300 ease-in-out;
+}
+.skills-card{
+    @apply bg-cards-background px-6 pt-5 pb-16 rounded-lg flex flex-col  items-center w-80 h-96 shadow transition-all duration-600;
+}
+.skill{
+    @apply bg-background px-4 py-2 m-1 rounded-full shadow-xs hover:bg-accent transition-colors duration-300;
+}
+.headers{
+    @apply  font-heading-font text-headlines text-5xl max-sm:text-4xl w-fit font-bold max-lg:mx-auto mb-6 pb-6;
+}
+.headers-line{
+    @apply  bg-accent h-2 w-0 absolute bottom-0 left-0 rounded transition-all delay-100 duration-300 ease-in;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* Start 100px below its final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at its original position */
+  }
+}
+
+.animated-element {
+    /* @apply  */
+  animation: fade-in linear forwards; /* Use 'forwards' to keep the final state */
+  animation-duration: auto; /* Duration is determined by scroll, not time */
+  animation-timeline: view(); /* Link to the element's visibility in its scroller */
+}

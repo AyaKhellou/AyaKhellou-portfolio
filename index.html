@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="p-0 m-0 box-border bg-b bg-background font-body-font">
+    <!-- scroll to top button -->
+    <a href="#home" class="scroll-to-top  animate-bounce bg-white rounded-full fixed bottom-4 right-4 z-50 p-2 hover:bg-gray-100 transition-all duration-100 ease-linear">
+        <i data-lucide="chevron-up" class="w-7 h-7"></i>
+    </a>
+    <!-- HOME PAGE -->
+        <div id="home" class="home-page">
+            <header class="navbar bg-background fixed flex justify-between items-center h-12 px-10 border-b-2 border-borders font-bold z-50 w-full transition-transform duration-100 ease-linear">
+                <div class="logo font-heading-font italic text-accent text-2xl ml-16">
+                    <p>AYA</p>
+                </div>
+                <button class="openLinks cursor-pointer md:hidden">
+                    <span class="bg-borders w-7 h-0.75 block rounded mb-1"></span>
+                    <span class="bg-borders w-7 h-0.75 block rounded mb-1"></span>
+                    <span class="bg-borders w-7 h-0.75 block rounded mb-1"></span>
+                </button>
+                <div class="links text-writing transition-all duration-300 ease-in-out flex-col gap-6 md:gap-10 absolute md:static top-10 right-6 md:right-0 bg-cards-background md:bg-transparent px-6 py-4 md:p-0 rounded-xl md:rounded-none shadow-lg md:shadow-none md:flex md:flex-row hidden">
+                    <a class="home links-hover" href="#home">Home</a>
+                    <a class="about links-hover" href="#about">About</a>
+                    <a class="skills links-hover" href="#skills">Skills</a>
+                    <a class="process links-hover" href="#process">Process</a>
+                    <a class="projects links-hover" href="#projects">Projects</a>
+                    <a class="contact links-hover" href="#contact">Contact</a>
+                </div>
+            </header>
+            <section 
+            class="landing-page flex flex-col tablet:flex-row tablet:justify-between items-center text-center justify-center border-b-2 border-borders px-16 max-lg:px-6 pt-20">
+                <div class="introduction flex flex-col tablet:items-start flex-1">
+                    <h1 
+                    class="text-4xl sm:text-6xl font-heading-font font-bold italic text-writing leading-relaxed mb-6">
+                        Hi, I'm <span class="text-accent text-shadow-2xs">Aya</span>.
+                    </h1>
+                    <h2 id="typewriter2" class="text-4xl font-medium leading-relaxed mb-10 max-sm:text-3xl">
+                    </h2>
+                    <p class="text-lg sm:text-2xl font-light leading-relaxed text-center tablet:text-left">
+                        I build modern web experiences with React, JavaScript, and Tailwind CSS, with a focus on clean interfaces, reusable components, and intuitive user experiences.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn-style bg-accent text-background hover:text-writing my-10 max-sm:my-1 max-sm:mt-10 hover:bg-background max-sm:w-full">
+                            <a href="/public/aya-khellou-public-resume.pdf" target="_blank">
+                                View my resume
+                            </a>
+                        </button>
+                        <button class="btn-style text-writing hover:text-background my-10 max-sm:my-1 hover:bg-accent max-sm:w-full">
+                            <a href="#projects">View my work</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="char relative flex items-end justify-end flex-1 mb-8">
+                    <div class="w-80 h-80 max-sm:w-64 max-sm:h-64 bg-radial from-accent from-50% to-white rounded-full blur-xl opacity-50 absolute top-0 right-10"></div>
+                    <div class="w-60 h-60 max-sm:w-48 max-sm:h-48 bg-radial from-accent from-50% to-white rounded-full blur-xl opacity-50 absolute bottom-0"></div>
+                    <img src="/public/waving-char.png" 
+                    alt="Chibi Girl with Hijab." 
+                    class="relative -left-5 sm:w-100 w-80">
+                </div>
+            </section>
+        </div>
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about py-12 px-16 max-lg:px-6 max-sm:px-8 border-b-2 border-borders">
+            <div class="flex max-lg:flex-col-reverse justify-between items-center gap-6">
+                <img class="self-end max-lg:self-center" src="/public/girl-coding.png" alt="" width="350px">
+                <div class="text w-1/2 max-lg:w-full">
+                    <h1 class="headers relative">About me
+                    <span class="headers-line"></span>
+                    </h1>
+                    <div class="desc relative overflow-hidden">
+                        <span class="right-border w-1 h-full bg-accent absolute right-0 top-0 max-lg:hidden rounded z-40"></span>
+                        <p class="intro relative text-right max-lg:text-center text-xl max-sm:text-lg font-light text-writing py-10 max-lg:py-4 pr-8 max-lg:pr-0 max-lg:border-none max-lg:translate-x-0">
+                            <span class="block opacity-0 transition-opacity duration-1000 ease-in-out">
+                                I'm Aya, a front-end developer who found my way into programming from a rather different field.
+                            </span>
+                            <span class="block opacity-0 transition-opacity duration-1000 delay-100 ease-in-out">
+                                I studied medical imaging and currently work as a radiology technician, but somewhere along the way, I discovered that I really enjoyed building things with code. What started as curiosity turned into months of teaching myself web development, experimenting with ideas, and building projects to understand how things actually work.
+                            </span>
+                            <span class="block opacity-0 transition-opacity duration-1000 delay-150 ease-in-out">
+                                These days, I work mainly with React, JavaScript, and Tailwind CSS. I've built everything from small API-driven applications to SkillForge, a full-stack learning platform where I worked with authentication, Firestore, custom React hooks, and cloud-based image storage.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="features flex justify-between max-md:flex-wrap max-md:justify-center gap-7 my-10">
+                <div class="feature w-xs bg-cards-background flex flex-col items-center justify-between gap-3 rounded-xl px-5 py-7 transition-all duration-600">
+                    <div class="bg-accent p-4 rounded-full text-background ">
+                        <i data-lucide="puzzle"
+                        class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-medium text-headlines">Problem Solver</h4>
+                    <p class="text-center text-writing">
+                        I enjoy breaking messy problems into smaller pieces and figuring out how everything should work together.
+                    </p>
+                </div>
+                <div class="feature w-xs bg-cards-background flex flex-col items-center justify-between gap-3 rounded-xl px-5 py-7 transition-all duration-600">
+                    <div class="bg-accent p-4 rounded-full text-background ">
+                        <i data-lucide="search"
+                        class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-medium text-headlines">
+                        Curious Builder
+                    </h4>
+                    <p class="text-center text-writing">
+                        I learn best by building. Most of my skills have come from turning ideas into real projects, breaking things, fixing them, and trying again.
+                    </p>
+                </div>
+                <div class="feature w-xs bg-cards-background flex flex-col items-center justify-between gap-3 rounded-xl px-5 py-7 transition-all duration-600">
+                    <div class="bg-accent p-4 rounded-full text-background ">
+                        <i data-lucide="sprout"
+                        class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-medium text-headlines">
+                        Always Learning
+                    </h4>
+                    <p class="text-center text-writing">
+                        I'm constantly exploring new tools and patterns, with a focus on understanding why something works—not just making it work.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- MY SKILLS SECTION -->
+        <section id="skills" class="skills px-16 max-lg:px-6 py-12 border-b-2 border-borders">
+            <h1 class="headers relative">My skills
+                <span class="headers-line"></span>
+            </h1>
+            <div class="skills-boxes flex max-lg:flex-wrap justify-center items-center gap-10 mt-20">
+                <div class="skills-card">
+                    <h4 class="text-2xl mt-4 mb-8 text-accent font-medium">Frontend</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill">React</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">Tailwind CSS</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4 class="text-2xl mt-4 mb-8 text-accent font-medium">Backend & Data</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill">Firebase</span>
+                        <span class="skill">Firestore</span>
+                        <span class="skill">Rest APIs</span>
+                        <span class="skill">Cloudinary</span>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4 class="text-2xl mt-4 mb-8 text-accent font-medium">Tools</h4>
+                    <div class="flex flex-wrap">
+                        <span class="skill">Git</span>
+                        <span class="skill">GitHub</span>
+                        <span class="skill">Vite</span>
+                        <span class="skill">VS code</span>
+                        <span class="skill">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="process px-16 max-lg:px-6 py-12 border-b-2 border-borders">
+            <h1 class="headers relative">My Process
+                <span class="headers-line"></span>
+            </h1>
+            <div class="skills-boxes flex max-lg:flex-wrap justify-center items-center gap-10 mt-20">
+                <div class="skills-card">
+                    <h4 class="text-2xl text-center mt-4 mb-8 text-accent font-medium">1- Explore</h4>
+                    <p class="text-center">
+                        I start by understanding the problem I'm trying to solve, researching what I need, and breaking the idea into smaller pieces.
+                    </p>
+                </div>
+                <div class="skills-card">
+                    <h4 class="text-2xl text-center mt-4 mb-8 text-accent font-medium">2- Plan</h4>
+                    <p class="text-center">
+                        I sketch out the interface, user flow, and application structure before jumping into the code.
+                    </p>
+                </div>
+                <div class="skills-card">
+                    <h4 class="text-2xl text-center mt-4 mb-8 text-accent font-medium">3- Build</h4>
+                    <p class="text-center">
+                        This is where I turn the idea into a real application—building components, managing state, connecting APIs, and working with data.
+                    </p>
+                </div>
+                <div class="skills-card">
+                    <h4 class="text-2xl text-center mt-4 mb-8 text-accent font-medium">4- Break & Improve</h4>
+                    <p class="text-center">
+                        Things rarely work perfectly the first time. I debug, test, rethink what isn't working, and refine the application until it feels right.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- MY PROJECTS SECTION -->
+        <section id="projects" class="projects py-12 px-16 max-lg:px-6 border-b-2 border-borders">
+            <h3 class="headers relative">My projects
+                <span class="headers-line"></span>
+            </h3>
+            <div class="projects-boxes">
+                <div class="project flex justify-between gap-6 mt-20 bg-cards-background p-6 rounded-lg max-tablet:flex-col max-tablet:items-center max-tablet:text-center overflow-hidden">
+                    <div class="app-details flex-3 mt-2 -translate-x-64 opacity-0 transition-all duration-1000 ease-in-out ">
+                        <h3 class="app-title text-headlines text-3xl max-sm:text-2xl font-semibold mb-3">SkillForge</h3>
+                        <p 
+                        class="subtitle text-xl max-sm:text-lg font-medium text-headlines mb-6">
+                            Personal Learning Management Platform
+                        </p>
+                        <p class="description text-writing text-lg/relaxed max-sm:text-base font-normal mb-7  lg:w-[90%]">
+                            A full-stack web application designed for self-learners to organize their learning journey, track progress, and stay consistent with their goals. SkillForge brings goals, skills, projects, study sessions, and personal notes into one centralized workspace.
+                            Designed with a clean structure, intuitive navigation, and a focused user experience to make managing long-term learning simple, organized, and motivating.
+                        </p>
+                        <div class="buttons flex max-tablet:justify-center max-sm:flex-col max-sm:gap-2">
+                            <a href="https://github.com/AyaKhellou/skill-forge" 
+                            target="_blank" 
+                            class="btn-style flex justify-between mr-3 w-fit gap-2 bg-accent text-background hover:bg-background hover:text-writing max-sm:w-full max-sm:justify-center">
+                                github
+                                <img src="/public/github-icon.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href="https://skill-forge01.netlify.app/" 
+                            target="_blank" 
+                            class="btn-style flex items-center justify-between w-fit gap-2 hover:bg-accent hover:text-background max-sm:w-full max-sm:justify-center">
+                                Demo
+                                <i data-lucide="square-arrow-out-up-right" class=""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image flex flex-col justify-center w-100 items-center gap-10 max-tablet:w-[90%] translate-x-64 opacity-0 transition-all duration-1000">
+                        <img 
+                        class="rounded-2xl" 
+                        src="/public/projects-imgs/skillForge.png">
+                        <div class="tags flex flex-wrap gap-2 mt-4">
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">React</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Tailwind CSS</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Firebase</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Cloudinary</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2ND PROJECT -->
+                <div class="project flex flex-row-reverse justify-between gap-6 my-8 bg-cards-background p-6 rounded-lg max-tablet:flex-col max-tablet:items-center max-tablet:text-center overflow-hidden">
+                    <div class="app-details flex-3 mt-2 translate-x-64 opacity-0 transition-all duration-1000 ease-in-out">
+                        <h3 class="app-title text-headlines text-3xl max-sm:text-2xl font-semibold mb-3">CineVerse</h3>
+                        <p class="subtitle text-xl max-sm:text-lg font-medium text-headlines mb-6">Movie Discovery & Personalization Platform</p>
+                        <p class="description text-writing text-lg/relaxed max-sm:text-base font-normal mb-7  lg:w-[90%]">
+                            A modern movie discovery platform designed for users to explore movies, browse by genre, search for specific titles, and build their own collection of favorites. CineVerse brings movie discovery and personalization together in one engaging and intuitive experience.
+                            Designed with a clean, cinematic interface and intuitive navigation to make exploring movies simple and enjoyable, while personalized profiles and favorite collections give users a space to keep track of the films they love.
+                        </p>
+                        <div class="buttons flex max-tablet:justify-center max-sm:flex-col max-sm:gap-2">
+                            <a href="https://github.com/AyaKhellou/cineVerse" 
+                            target="_blank" 
+                            class="btn-style flex justify-between mr-3 w-fit gap-2 bg-accent text-background hover:bg-background hover:text-writing max-sm:w-full max-sm:justify-center">
+                                github
+                                <img src="/public/github-icon.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href="https://cineverse-we.netlify.app/"
+                            target="_blank" 
+                            class="btn-style flex items-center justify-between w-fit gap-2 hover:bg-accent hover:text-background max-sm:w-full max-sm:justify-center">
+                                Demo
+                                <i data-lucide="square-arrow-out-up-right" class=""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image flex flex-col justify-center gap-10 w-100 items-center max-tablet:w-[90%] -translate-x-64 opacity-0 transition-all duration-1000">
+                        <img class="rounded-2xl" src="/public/projects-imgs/cineVerse.png">
+                        <div class="tags flex flex-wrap gap-2">
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">React</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Tailwind CSS</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Firebase</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">TMDB API</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3RD PROJECT -->
+                <div class="project flex justify-between gap-6 mt-20 bg-cards-background p-6 rounded-lg max-tablet:flex-col max-tablet:items-center max-tablet:text-center overflow-hidden">
+                    <div class="app-details flex-3 mt-2 -translate-x-64 opacity-0 transition-all duration-1000 ease-in-out ">
+                        <h3 class="app-title text-headlines text-3xl max-sm:text-2xl font-semibold mb-3">Lifekoach</h3>
+                        <p 
+                        class="subtitle text-xl max-sm:text-lg font-medium text-headlines mb-6">
+                            Life Coaching & Personal Growth Website
+                        </p>
+                        <p class="description text-writing text-lg/relaxed max-sm:text-base font-normal mb-7  lg:w-[90%]">
+                            A multi-page website designed for a life coaching brand to showcase its services, share personal growth resources, and connect with potential clients. The site brings together coaching programs, blog content, and contact information in a clean and approachable experience.
+                            Built to closely translate the original design into a responsive and interactive website, with a content-managed blog that allows the owner to publish and manage articles independently.
+                        </p>
+                        <div class="buttons flex max-tablet:justify-center max-sm:flex-col max-sm:gap-2">
+                            <a href="https://github.com/AyaKhellou/lifkoach" 
+                            target="_blank" 
+                            class="btn-style flex justify-between mr-3 w-fit gap-2 bg-accent text-background hover:bg-background hover:text-writing max-sm:w-full max-sm:justify-center">
+                                github
+                                <img src="/public/github-icon.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href="https://ayakhellou.github.io/lifkoach/" 
+                            target="_blank" 
+                            class="btn-style flex items-center justify-between w-fit gap-2 hover:bg-accent hover:text-background max-sm:w-full max-sm:justify-center">
+                                Demo
+                                <i data-lucide="square-arrow-out-up-right" class=""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image flex flex-col w-100 items-center justify-center gap-10 max-tablet:w-[90%] translate-x-64 opacity-0 transition-all duration-1000">
+                        <img 
+                        class="rounded-2xl" 
+                        src="/public/projects-imgs/lifeCoach.png">
+                        <div class="tags flex flex-wrap gap-2">
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">HTML</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Tailwind CSS</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">JavaScript</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Sanity</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">AOS</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- makeup Project -->
+                <div class="project flex flex-row-reverse justify-between gap-6 my-8 bg-cards-background p-6 rounded-lg max-tablet:flex-col max-tablet:items-center max-tablet:text-center overflow-hidden">
+                    <div class="app-details flex-3 mt-2 translate-x-64 opacity-0 transition-all duration-1000 ease-in-out">
+                        <h3 class="app-title text-headlines text-3xl max-sm:text-2xl font-semibold mb-3">Amelia</h3>
+                        <p class="subtitle text-xl max-sm:text-lg font-medium text-headlines mb-6">Beauty Artist Booking & Showcase Website</p>
+                        <p class="description text-writing text-lg/relaxed max-sm:text-base font-normal mb-7  lg:w-[90%]">
+                            A modern website designed for a beauty artist to showcase her work, present her services, and connect with potential clients. The site brings together a curated portfolio, service packages, client testimonials, and booking information in one cohesive experience.
+                            Designed with a strong visual identity and an editorial-inspired layout to highlight the artist's work while making it easy for visitors to explore different looks, discover services, and submit a booking request.
+                        </p>
+                        <div class="buttons flex max-tablet:justify-center max-sm:flex-col max-sm:gap-2">
+                            <a href="https://github.com/AyaKhellou/makeup-artist-landing-page" 
+                            target="_blank" 
+                            class="btn-style flex justify-between mr-3 w-fit gap-2 bg-accent text-background hover:bg-background hover:text-writing max-sm:w-full max-sm:justify-center">
+                                github
+                                <img src="/public/github-icon.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href="https://ayakhellou.github.io/makeup-artist-landing-page/"
+                            target="_blank" 
+                            class="btn-style flex items-center justify-between w-fit gap-2 hover:bg-accent hover:text-background max-sm:w-full max-sm:justify-center">
+                                Demo
+                                <i data-lucide="square-arrow-out-up-right" class=""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image flex flex-col justify-center gap-10 w-100 items-center max-tablet:w-[90%] -translate-x-64 opacity-0 transition-all duration-1000">
+                        <img class="rounded-2xl" src="/public/projects-imgs/amelia-makeup.png">
+                        <div class="tags flex flex-wrap gap-2">
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">React</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">JavaScript</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">CSS</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">FormSpree</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- weather app -->
+                <div class="project flex justify-between gap-6 mt-20 bg-cards-background p-6 rounded-lg max-tablet:flex-col max-tablet:items-center max-tablet:text-center overflow-hidden">
+                    <div class="app-details flex-3 mt-2 -translate-x-64 opacity-0 transition-all duration-1000 ease-in-out ">
+                        <h3 class="app-title text-headlines text-3xl max-sm:text-2xl font-semibold mb-3">Meoweather</h3>
+                        <p 
+                        class="subtitle text-xl max-sm:text-lg font-medium text-headlines mb-6">
+                            Playful Weather App
+                        </p>
+                        <p class="description text-writing text-lg/relaxed max-sm:text-base font-normal mb-7  lg:w-[90%]">
+                            A playful weather application designed to make checking the weather feel a little more fun. Users can search for a location or use their current location to view weather conditions, with the interface adapting to the time of day and current atmosphere.
+                            Designed around a custom cat character and an expressive visual environment, with changing skies and small animations that bring the experience to life. The result is a lightweight weather app that combines practical information with a more personal and playful interface.
+                        </p>
+                        <div class="buttons flex max-tablet:justify-center max-sm:flex-col max-sm:gap-2">
+                            <a href="https://github.com/AyaKhellou/meoweather-" 
+                            target="_blank" 
+                            class="btn-style flex justify-between mr-3 w-fit gap-2 bg-accent text-background hover:bg-background hover:text-writing max-sm:w-full max-sm:justify-center">
+                                github
+                                <img src="/public/github-icon.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href="https://ayakhellou.github.io/meoweather-/" 
+                            target="_blank" 
+                            class="btn-style flex items-center justify-between w-fit gap-2 hover:bg-accent hover:text-background max-sm:w-full max-sm:justify-center">
+                                Demo
+                                <i data-lucide="square-arrow-out-up-right" class=""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image flex flex-col justify-center w-100 items-center gap-10 max-tablet:w-[90%] translate-x-64 opacity-0 transition-all duration-1000">
+                        <img 
+                        class="rounded-2xl" 
+                        src="/public/projects-imgs/meoweather.png">
+                        <div class="tags flex flex-wrap gap-2 mt-4">
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">HTML</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">CSS</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">JavaScript</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">Figma</div>
+                            <div class="tag bg-accent px-2 py-1 text-cards-background rounded-full">penWeatherMap API</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section 
+        id="contact" 
+        class="contact py-20 px-16 max-lg:px-6 text-center text-writing relative">
+            <h2 id="typewriter3" class="text-3xl font-bold mb-4">Let’s connect</h2>
+            <p class="max-w-2xl mx-auto mb-6">
+                I’m currently looking for opportunities to grow as a front-end developer and contribute to meaningful projects.
+                Have a role, a project, or just want to say hi? I’d love to hear from you.
+            </p>
+            <div class="flex justify-center gap-6 mt-6">
+                <a 
+                    href="https://github.com/AyaKhellou" 
+                    target="_blank">
+                    
+                    <img src="/public/github 1.png" class="w-8 h-8" />
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/aya-khellou-510278243/" 
+                    target="_blank">
+                    <img src="/public/linkedin-icon.png" class="w-8 h-8" />
+                </a>
+                <a 
+                    href="mailto:aya.khellou.dev@gmail.com"
+                    target="_blank">
+                    <img src="/public/email-icon.png" class="w-8 h-8" />
+                </a>
+            </div>
+
+            <p class="text-xs text-brown-400 mt-10">© 2025 Aya. All rights reserved 💜</p>
+        </section>
+        <!-- main js file -->
+    <script type="module" src="/src/main.js"></script>
+    <!-- type writer -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+        new TypeIt("#typewriter2", {
+        speed: 60,
+        startDelay: 500,
+        cursorChar: "|",
+        loop: true,
+        })
+        .type("Front-End Developer")
+        .go();
+
+        new TypeIt("#typewriter3",{
+            speed: 70,
+            startDelay: 300,
+            cursorChar: "|",
+            loop:true
+        })
+        .go();
+    </script>
+    <!-- lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
